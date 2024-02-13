@@ -5,12 +5,18 @@ let groupBtn = document.getElementById("groupBtn");
 let deleteName = document.getElementById("deleteName");
 let TotalNameCount = document.getElementById("TotalNameCount");
 
+let currentCount = 0
+
 const AddNames = () => {
 
 }
 
 submitBtn.addEventListener("click", async () => {
     if(inputField.value !== ""){
+
+        currentCount++;
+        TotalNameCount.textContent = "Total Names: " + (currentCount);
+
         let containerDiv = document.createElement('div');
         containerDiv.classList.add('container-fluid', 'center', 'topSpace');
 
