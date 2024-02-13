@@ -84,8 +84,15 @@ groupSlider.onchange = () => {
 };
 
 submitBtn.addEventListener('click', () => {
+    if(inputField.value !== "")
+    {    
     saveLocalStorage(inputField.value);
     updateFunction();
+    }
+    else
+    {
+        alert("PLEASE TYPE A NAME")
+    }
 })
 
 randomBtn.addEventListener('click', () => {
