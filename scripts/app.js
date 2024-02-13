@@ -10,7 +10,7 @@ const AddNames = () => {
 }
 
 submitBtn.addEventListener("click", async () => {
-    if(inputField.value){
+    if(inputField.value !== ""){
         // Create container div
         let containerDiv = document.createElement('div');
         containerDiv.classList.add('container-fluid', 'center', 'topSpace');
@@ -42,7 +42,11 @@ submitBtn.addEventListener("click", async () => {
         let button = document.createElement('button');
         button.setAttribute('type', 'button');
         button.classList.add('btn', 'btn-danger');
-        button.textContent = 'Danger';
+        button.textContent = 'Remove';
+
+        button.addEventListener('click', async () => {
+            containerDiv.remove(); 
+        });
 
         // Append button to second column div
         colDiv2.appendChild(button);
@@ -62,6 +66,8 @@ submitBtn.addEventListener("click", async () => {
 
         // Append container div to the body
         document.body.appendChild(containerDiv);
+    }else{
+        alert("please type a name")
     }
 });
 
