@@ -1,19 +1,19 @@
 import { generateNameGroup } from "./app.js";
 
-const GroupRND = (arr, num) => {
-  if (num !== "0") {
+const GroupRND = (arry, number) => {
+  if (number !== "0") {
     let array = [];
-    let randomArray = arr;
+    let randomArray = arry;
     let nameCounter = 0;
     let newArray = [];
 
-    for (let i = 0; i < num; i++) {
+    for (let i = 0; i < number; i++) {
       let emptyArray = [];
       array.push(emptyArray);
     }
 
     while (randomArray.length >= 1) {
-      for (let i = 0; i < num; i++) {
+      for (let i = 0; i < number; i++) {
         if (randomArray.length !== 0) {
           let index = Math.floor(Math.random() * randomArray.length);
           array[i].push(randomArray[index]);
