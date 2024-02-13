@@ -15,3 +15,12 @@
 .bg2{
     background-color: bisque;
 }
+
+.rowCustom{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.width{
+    width: 40%;
+}
