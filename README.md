@@ -7,3 +7,5 @@ Randomly picks one person from the list.
 Allows user to be able to randomly generate the following
 How many people per group
 How many groups you want to have.
+
+// Still working on the how many people per group
