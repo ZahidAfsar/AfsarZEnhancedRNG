@@ -1,0 +1,17 @@
+.center{
+    text-align: center;
+    justify-content: center;
+}
+
+.topSpace{
+    padding-top: 20px;
+}
+
+.bg1{
+    background-color: skyblue;
+    border-bottom: 2px solid black;
+}
+
+.bg2{
+    background-color: bisque;
+}
